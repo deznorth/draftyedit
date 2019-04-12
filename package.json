@@ -4,12 +4,22 @@
   "description": "A markdown editor",
   "main": "./server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./server/index.js",
+    "dev:build":"cd .\\client && npm run build && move /Y .\\build ..\\",
+    "dev": "npm run dev:build && nodemon ./server/index.js",
+    "serve": "nodemon ./server/index.js",
+    "heroku-postbuild": "cd ./client && npm install && npm run build && mv -f ./build ../"
   },
   "author": "David Rojas Gonzalez",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "morgan": "^1.9.1"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
