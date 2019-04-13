@@ -1,0 +1,12 @@
+
+.App{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  grid-column-gap: 1rem;
+  background-color: #252535;
+  height: 100vh;
+  box-sizing: border-box;
+
+  color: white;
+}

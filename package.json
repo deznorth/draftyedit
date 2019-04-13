@@ -1,11 +1,11 @@
 {
-  "name": "m-edit",
+  "name": "draftyedit",
   "version": "1.0.0",
-  "description": "A markdown editor",
+  "description": "A Draft.js editor",
   "main": "./server/index.js",
   "scripts": {
     "start": "node ./server/index.js",
-    "dev:build":"cd .\\client && npm run build && move /Y .\\build ..\\",
+    "dev:build": "cd .\\client && npm run build && move /Y .\\build ..\\",
     "dev": "npm run dev:build && nodemon ./server/index.js",
     "serve": "nodemon ./server/index.js",
     "heroku-postbuild": "cd ./client && npm install && npm run build && mv -f ./build ../"
