@@ -1,0 +1,36 @@
+
+//The customStyle import will override any "!default" values that are set inside it.
+@import './customStyle';
+
+//colors
+$color-bg: rgba(0,0,0,0.2) !default;
+
+//values
+$val-padding: .5rem !default;
+$val-margin: 0 !default;
+
+
+.DraftyEditor{
+    //Grid
+    display: grid;
+    grid-template-rows: .15fr 1fr;
+    //Style
+    background-color: $color-bg;
+    margin: $val-margin;
+    padding: $val-padding;
+
+    .DraftEditor-root{
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(white, 0.3);
+        padding: .5rem;
+        box-sizing: border-box;
+    }
+
+    button{
+        background-color: transparent;
+        border: 1px solid rgba(white, 0.3);
+        color: white;
+        padding: .3rem .5rem;
+    }
+}

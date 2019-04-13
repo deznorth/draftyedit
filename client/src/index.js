@@ -1,3 +1,4 @@
+import 'babel-polyfill'; //needed for draft.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
